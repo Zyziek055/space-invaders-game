@@ -31,10 +31,10 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun GameScreen(modifier: Modifier = Modifier) {
     Surface(
-        modifier = Modifier.fillMaxSize(),
+        modifier = modifier.fillMaxSize(),
         color = Color.Black //Black background
     ) {
-        AlienGrid()
+        AndroidAlienRow()
     }
 }
 
@@ -77,6 +77,7 @@ fun AndroidAlienRowPreview() {
 @Composable
 fun GameWithInfo(modifier: Modifier ) {
     Scaffold(
+        containerColor = Color.Black,
         topBar = {
             InfoHeader()
         },
